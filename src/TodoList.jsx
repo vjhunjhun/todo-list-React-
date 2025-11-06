@@ -70,7 +70,7 @@ export default function TodoList(){
                     <br></br>
             </ul>
             <br></br>
-            {!allDone && <button onClick={completeAll}>Mark All Complete</button>}
+            {todos.length > 0 && !allDone && <button onClick={completeAll}>Mark All Complete</button>}
         </div>
     );
 }
